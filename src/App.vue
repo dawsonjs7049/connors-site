@@ -2,7 +2,7 @@
   <div id="app">
     <div class="jumbo-container">
       <b-jumbotron header="Connor McRaven" lead="Custodial & Maintenance">
-        <p>Contact Me: 715-666-6666 || connor@gmail.com</p>
+        <p>Contact Me: 715-497-2268 || connormcraven@gmail.com</p>
       </b-jumbotron>
     </div>
     <div class="body">
@@ -11,15 +11,19 @@
           <img class="imageSrc" src="./assets/logo.png" alt="logo">
         </div>
         <div class="text">
+          <h2>About Me</h2>
+          <hr>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis itaque provident est blanditiis commodi quo consectetur. Vitae, culpa nesciunt! Optio, eum quas ea et itaque repellat eligendi deleniti voluptas a!
         </div>
       </section>
       <section class="section2 fade-in">
         <div class="text">
+          <h2>Rates and Availability</h2>
+          <hr>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis itaque provident est blanditiis commodi quo consectetur. Vitae, culpa nesciunt! Optio, eum quas ea et itaque repellat eligendi deleniti voluptas a!
         </div>
         <div class="image">
-          <img class="imageSrc" src="./assets/logo.png" alt="logo">
+          <img class="imageSrc" src="./assets/calendar.svg" alt="logo">
         </div>
       </section>
       <section class="section3 fade-in">
@@ -46,11 +50,15 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 #app {
   font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+  margin-bottom: 1rem;
 }
 
 .image {
@@ -82,7 +90,7 @@ section {
 }
 
 .imageSrc {
-  height: 100%;
+  height: 90%;
   width: auto;
 }
 
@@ -116,3 +124,6 @@ section {
 
 // photos by: 
 // <span>Photo by <a href="https://unsplash.com/@tomrumble?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Tom Rumble</a> on <a href="/s/photos/houses?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+
+// calendar
+// <div>Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>

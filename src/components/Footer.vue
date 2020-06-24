@@ -1,12 +1,12 @@
 <template>
 <div class="footer">
   <div>
-    <b-icon-phone></b-icon-phone>
-    715-666-6666
+    <a href="tel:1-715-497-2268"><b-icon-phone></b-icon-phone>
+    715-497-2268</a>
   </div>
   <div>
-    <b-icon-envelope></b-icon-envelope>
-    connor@gmail.com
+    <a href="mailto:connormcraven@gmail.com"><b-icon-envelope></b-icon-envelope>
+    connormcraven@gmail.com</a>
   </div>
 
 </div>
@@ -34,5 +34,9 @@ export default {
     color: white;
     background-color: darkslategray;
     font-size: 1.5em;
+  }
+
+  a:link {
+    text-decoration: none;
   }
 </style>
