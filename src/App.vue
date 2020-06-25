@@ -18,54 +18,29 @@
             <b-col>
               <h5>Indoor</h5>
               <ul>
-                <li>Cleaning</li>
-                <li>Waste removal</li>
-                <li>Plumbing</li>
-                <li>Electrical</li>
-                <li>Appliance removal/installation</li>
-                <li>Much more!</li>
+                <li class="about-li">Cleaning</li>
+                <li class="about-li">Waste removal</li>
+                <li class="about-li">Plumbing</li>
+                <li class="about-li">Electrical</li>
+                <li class="about-li">Appliance installation</li>
+                <li class="about-li">Appliance removal</li>
+                <li class="about-li">Much more!</li>
               </ul>
             </b-col>
             <b-col>
               <h5>Outdoor</h5>
               <ul>
-                <li>Mowing/edging</li>
-                <li>Weed removal</li>
-                <li>Powerwashing</li>
-                <li>Staining</li>
-                <li>Siding repair</li>
-                <li>Rain gutter cleaning</li>
-                <li>Much more!</li>
+                <li class="about-li">Mowing/edging</li>
+                <li class="about-li">Weed removal</li>
+                <li class="about-li">Powerwashing</li>
+                <li class="about-li">Staining</li>
+                <li class="about-li">Siding repair</li>
+                <li class="about-li">Rain gutter cleaning</li>
+                <li class="about-li">Much more!</li>
               </ul>
             </b-col>
           </b-row>
         </b-container>
-        
-        <!-- <div class="about-lists-div"> 
-          <div class="inner-list-div">
-            <h5>Indoor</h5>
-            <ul>
-              <li>Cleaning</li>
-              <li>Waste removal</li>
-              <li>Plumbing</li>
-              <li>Electrical</li>
-              <li>Appliance removal/installation</li>
-              <li>Much moor!</li>
-            </ul>
-          </div>
-          <div class="inner-list-div">
-            <h5>Outdoor</h5>
-            <ul>
-              <li>Mowing/edging</li>
-              <li>Weed removal</li>
-              <li>Powerwashing</li>
-              <li>Staining</li>
-              <li>Siding repair</li>
-              <li>Rain gutter cleaning</li>
-              <li>Much more!</li>
-            </ul>
-          </div>
-        </div> -->
       </div>
     </section>
     <section class="section2 fade-in">
@@ -74,10 +49,10 @@
           <h2>Rates and Availability</h2>
           <hr>
           <ul>
-            <li>Potential availability is 7 days a week - Monday through Sunday!</li>
-            <li>Flat-rate of $22.50/hour</li>
-            <li>No extra charge for Saturday/Sunday</li>
-            <li>Free Estimates</li>
+            <li class="rates-li">Potential availability is 7 days a week - Monday through Sunday!</li>
+            <li class="rates-li">Flat-rate of $22.50/hour</li>
+            <li class="rates-li">No extra charge for Saturday/Sunday</li>
+            <li class="rates-li">Free Estimates</li>
           </ul>
           <h4 style="margin-top: 3rem;">Please call or email with any questions!</h4>
         </div>
@@ -120,6 +95,14 @@ export default {
 
 ul {
   padding-left: 18px !important;
+}
+
+.rates-li {
+  margin-top: 1rem;
+}
+
+.about-li {
+  margin-top: .5rem;
 }
 
 h2 {
