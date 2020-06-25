@@ -4,37 +4,96 @@
       <b-jumbotron header="Connor McRaven" lead="Custodial & Maintenance">
         <p>Contact Me: 715-497-2268 || connormcraven@gmail.com</p>
       </b-jumbotron>
-    </div>
-    <div class="body">
-      <section class="section1 fade-in">
-        <div class="image">
-          <img class="imageSrc" src="./assets/logo.png" alt="logo">
-        </div>
-        <div class="text">
-          <h2>About Me</h2>
-          <hr>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis itaque provident est blanditiis commodi quo consectetur. Vitae, culpa nesciunt! Optio, eum quas ea et itaque repellat eligendi deleniti voluptas a!
-        </div>
-      </section>
-      <section class="section2 fade-in">
+    </div>>
+    <section class="section1 fade-in">
+      <div class="image">
+        <img class="imageSrc" src="./assets/logo.png" alt="logo">
+      </div>
+      <div class="text">
+        <h2>About Me</h2>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis itaque provident est blanditiis commodi quo consectetur. Vitae, culpa nesciunt! Optio, eum quas ea et itaque repellat eligendi deleniti voluptas a!</p>
+        <b-container class="lists-container">
+          <b-row align-h="around">
+            <b-col>
+              <h5>Indoor</h5>
+              <ul>
+                <li>Cleaning</li>
+                <li>Waste removal</li>
+                <li>Plumbing</li>
+                <li>Electrical</li>
+                <li>Appliance removal/installation</li>
+                <li>Much more!</li>
+              </ul>
+            </b-col>
+            <b-col>
+              <h5>Outdoor</h5>
+              <ul>
+                <li>Mowing/edging</li>
+                <li>Weed removal</li>
+                <li>Powerwashing</li>
+                <li>Staining</li>
+                <li>Siding repair</li>
+                <li>Rain gutter cleaning</li>
+                <li>Much more!</li>
+              </ul>
+            </b-col>
+          </b-row>
+        </b-container>
+        
+        <!-- <div class="about-lists-div"> 
+          <div class="inner-list-div">
+            <h5>Indoor</h5>
+            <ul>
+              <li>Cleaning</li>
+              <li>Waste removal</li>
+              <li>Plumbing</li>
+              <li>Electrical</li>
+              <li>Appliance removal/installation</li>
+              <li>Much moor!</li>
+            </ul>
+          </div>
+          <div class="inner-list-div">
+            <h5>Outdoor</h5>
+            <ul>
+              <li>Mowing/edging</li>
+              <li>Weed removal</li>
+              <li>Powerwashing</li>
+              <li>Staining</li>
+              <li>Siding repair</li>
+              <li>Rain gutter cleaning</li>
+              <li>Much more!</li>
+            </ul>
+          </div>
+        </div> -->
+      </div>
+    </section>
+    <section class="section2 fade-in">
+      <div class="section2-div">
         <div class="text">
           <h2>Rates and Availability</h2>
           <hr>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis itaque provident est blanditiis commodi quo consectetur. Vitae, culpa nesciunt! Optio, eum quas ea et itaque repellat eligendi deleniti voluptas a!
+          <ul>
+            <li>Potential availability is 7 days a week - Monday through Sunday!</li>
+            <li>Flat-rate of $22.50/hour</li>
+            <li>No extra charge for Saturday/Sunday</li>
+            <li>Free Estimates</li>
+          </ul>
+          <h4 style="margin-top: 3rem;">Please call or email with any questions!</h4>
         </div>
         <div class="image">
           <img class="imageSrc" src="./assets/calendar.svg" alt="logo">
         </div>
-      </section>
-      <section class="section3 fade-in">
-        <div class="image">
-          <img class="imageSrc" src="./assets/logo.png" alt="logo">
-        </div>
-        <div class="text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis itaque provident est blanditiis commodi quo consectetur. Vitae, culpa nesciunt! Optio, eum quas ea et itaque repellat eligendi deleniti voluptas a!
-        </div>
-      </section>
-    </div>
+      </div>
+    </section>
+    <section class="section3 fade-in">
+      <div class="image">
+        <img class="imageSrc" src="./assets/logo.png" alt="logo">
+      </div>
+      <div class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis itaque provident est blanditiis commodi quo consectetur. Vitae, culpa nesciunt! Optio, eum quas ea et itaque repellat eligendi deleniti voluptas a!
+      </div>
+    </section>
     <Footer msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
@@ -55,22 +114,54 @@ export default {
 
 #app {
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  font-size: 20px;
+}
+
+ul {
+  padding-left: 18px !important;
 }
 
 h2 {
   margin-bottom: 1rem;
 }
 
-.image {
-  height: 20rem;
-  width: 40vw;
-  grid-area: imageArea;
+/* h5 {
   text-align: center;
 }
 
-.text {
+about-lists-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  
+}
+
+.inner-list-div {
+  max-width: 30%;
+}  */
+
+.imageSrc {
+  height: 90%;
+  width: auto;
+}
+
+.image {
   height: 20rem;
   width: 40vw;
+  max-width: 500px;
+  grid-area: imageArea;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  /* height: 20rem; */
+  width: 40vw;
+  max-width: 500px;
   grid-area: textArea;
 }
 
@@ -83,32 +174,41 @@ h2 {
   background-size: cover;
   color: white;
   text-shadow: 2px 2px #1d1d1d;
+  margin-bottom: 0;
+}
+
+.lists-container {
+  padding: 0;
 }
 
 section {
-  padding: 3rem 0;
-}
-
-.imageSrc {
-  height: 90%;
-  width: auto;
+  padding: 4rem 0;
 }
 
 .section1 {
   display: grid;
   grid-template-areas: 'imageArea textArea';
   justify-content: space-evenly;
-  align-content: space-between;
+  align-content: center;
   width: 100%;
+  max-width: 1600px;
+  margin: auto;
+  /* height: 30rem; */
 }
 
 .section2 {
   background-color: rgb(126, 240, 255);
+  width: 100vw;
+}
+
+.section2-div {
   display: grid;
   grid-template-areas: 'textArea imageArea';
   justify-content: space-evenly;
   align-content: space-between;
-  width: 100%;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section3 {
@@ -117,6 +217,8 @@ section {
   justify-content: space-evenly;
   align-content: space-between;
   width: 100%;
+  max-width: 1600px;
+  margin: auto;
 }
 
 </style>
