@@ -1,6 +1,6 @@
 <template>
 <div class="footer">
-  <div>
+  <div class="footer-inner-div">
     <a href="tel:1-715-497-2268"><b-icon-phone></b-icon-phone>
     715-497-2268</a>
   </div>
@@ -27,16 +27,20 @@ export default {
   .footer {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    height: 3rem;
     color: white;
     background-color: darkslategray;
-    font-size: 1.5em;
+    font-size: 1em !important;
+    padding: .5rem 0;
   }
 
   a:link {
     text-decoration: none;
+  }
+
+  .footer-inner-div {
+    margin-right: 2rem;
   }
 </style>
