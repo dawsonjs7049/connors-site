@@ -2,17 +2,18 @@
   <div id="app">
     <div class="jumbo-container">
       <b-jumbotron header="Connor McRaven" lead="Custodial & Maintenance">
-        <p>Contact Me: 715-497-2268 || connormcraven@gmail.com</p>
+        <p class="mt-4">Contact Me: 715-497-2268 || connormcraven@gmail.com</p>
       </b-jumbotron>
     </div>
     <section class="section1 fade-in">
       <div class="image">
-        <img class="imageSrc" src="./assets/logo.png" alt="logo">
+        <img class="imageSrc animate" src="./assets/logo.png" alt="logo">
       </div>
       <div class="text">
         <h2>About Me</h2>
         <hr>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis itaque provident est blanditiis commodi quo consectetur. Vitae, culpa nesciunt! Optio, eum quas ea et itaque repellat eligendi deleniti voluptas a!</p>
+        <p>My name is Connor McRaven and I offer many different household services to help you keep up with day to day maintenance or with the remodeling you've been dreaming of. I come from a background of service work and have the experience to see your job done right. My availability and services are listed below, please don't hesitate to call with any questions!</p>
+        <hr>
         <b-container class="lists-container">
           <b-row align-h="around">
             <b-col cols="12" sm="6">
@@ -52,15 +53,17 @@
             <li class="rates-li">Potential availability is 7 days a week - Monday through Sunday!</li>
             <li class="rates-li">Flat-rate of $22.50/hour</li>
             <li class="rates-li">No extra charge for Saturday/Sunday</li>
+            <li class="rates-li">Accept work in a 50 mile radius of Eau Claire, WI</li>
             <li class="rates-li">Free Estimates</li>
           </ul>
           <h4 style="margin-top: 3rem;">Please call or email with any questions!</h4>
         </div>
         <div class="image">
-          <img class="imageSrc" src="./assets/calendar.svg" alt="logo">
+          <img class="imageSrc animate" src="./assets/calendar.svg" alt="logo">
         </div>
       </div>
     </section>
+
     <section class="section3 fade-in">
       <!-- <div class="image">
         <img class="imageSrc" src="./assets/logo.png" alt="logo">
@@ -81,55 +84,58 @@
                 indicators
                 img-width="500"
                 img-height="900"
+                fade
               >
-                <b-carousel-slide img-src="https://via.placeholder.com/500x900.png"></b-carousel-slide>
-                <b-carousel-slide img-src="https://via.placeholder.com/500x900.png/FF0000"></b-carousel-slide>
+                <b-carousel-slide img-src="./assets/vinyl-before.png" alt="picture"></b-carousel-slide>
+                <b-carousel-slide img-src="./assets/vinyl-after.png"></b-carousel-slide>
               </b-carousel>
             </div>
           </b-col>
           <b-col cols="12" md="6" lg="3">
             <div>
               <b-carousel
-                id="carousel-2"
-                :interval="3250"
+                id="carousel-1"
+                :interval="3000"
                 controls
                 indicators
                 img-width="500"
                 img-height="900"
-                
+                fade
               >
-                <b-carousel-slide img-src="https://via.placeholder.com/500x900.png"></b-carousel-slide>
-                <b-carousel-slide img-src="https://via.placeholder.com/500x900.png/FF0000"></b-carousel-slide>
+                <b-carousel-slide img-src="./assets/vinyl-before.png" alt="picture"></b-carousel-slide>
+                <b-carousel-slide img-src="./assets/vinyl-after.png"></b-carousel-slide>
               </b-carousel>
             </div>
           </b-col>
           <b-col cols="12" md="6" lg="3">
             <div>
               <b-carousel
-                id="carousel-3"
-                :interval="3500"
+                id="carousel-1"
+                :interval="3000"
                 controls
                 indicators
                 img-width="500"
                 img-height="900"
+                fade
               >
-                <b-carousel-slide img-src="https://via.placeholder.com/500x900.png"></b-carousel-slide>
-                <b-carousel-slide img-src="https://via.placeholder.com/500x900.png/FF0000"></b-carousel-slide>
+                <b-carousel-slide img-src="./assets/vinyl-before.png" alt="picture"></b-carousel-slide>
+                <b-carousel-slide img-src="./assets/vinyl-after.png"></b-carousel-slide>
               </b-carousel>
             </div>
           </b-col>
           <b-col cols="12" md="6" lg="3">
             <div>
               <b-carousel
-                id="carousel-4"
-                :interval="3750"
+                id="carousel-1"
+                :interval="3000"
                 controls
                 indicators
                 img-width="500"
                 img-height="900"
+                fade
               >
-                <b-carousel-slide img-src="https://via.placeholder.com/500x900.png"></b-carousel-slide>
-                <b-carousel-slide img-src="https://via.placeholder.com/500x900.png/FF0000"></b-carousel-slide>
+                <b-carousel-slide img-src="./assets/vinyl-before.png" alt="picture"></b-carousel-slide>
+                <b-carousel-slide img-src="./assets/vinyl-after.png"></b-carousel-slide>
               </b-carousel>
             </div>
           </b-col>
@@ -239,6 +245,32 @@ h5 {
    font-weight: bold;
 }
 
+
+section:hover > div > img {
+  animation: bounce 1s infinite alternate;
+}
+
+section:hover > div > div > img {
+  animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+
 .rates-li {
   margin-top: 1rem;
 }
@@ -290,7 +322,7 @@ h5 {
   background-image: url("./assets/bg-1.jpg");
   background-size: cover;
   color: white;
-  text-shadow: 2px 2px #1d1d1d;
+  text-shadow: 2px 2px #0c0c0c;
   margin-bottom: 0;
 }
 
@@ -393,3 +425,5 @@ section {
 
 // calendar
 // <div>Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+//start command is 'npm run serve'
